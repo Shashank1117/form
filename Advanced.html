@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced Form</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            h3{
+                color: blueviolet;
+                font-size: 40px;
+            }
+            form{
+                background-color: bisque;
+                padding: 30px;
+                border: 5px solid red;
+                font-size: 30px;
+                max-width: 100%;
+                margin: 30px;
+            }
+            th{
+                color: red;
+            }
+            td{
+                padding: 10px 20px;
+            }
+            .btns{
+                background-color: green;
+                color: white;
+                font-size: 30px;
+                padding: 10px 20px;
+                margin: 20px;
+            }
+            .btns:hover{
+                background-color: yellow;
+                color: red;
+            }
+        </style>
+            
+    </head>
+    <body>
+            <form method="post">
+            <marquee behavior="alternate" scrollamount="15" bgcolor="white" height="80px"><h3>Fill Form Data</h3></marquee>
+            <center>
+            <table>
+                <tr>
+                    <th>Ename :</th>
+                    <td><input type="text" name="ename"></td>
+                </tr>
+
+                <tr>
+                    <th>Email :</th>
+                    <td><input type="email" name="email"></td>
+                </tr>
+
+                <tr>
+                    <th>Joining Date :</th>
+                    <td><input type="date" name="jdate"></td>
+                </tr>
+
+                <tr>
+                    <th>Login Time  :</th>
+                    <td><input type="time" name="Ltime"></td>
+                </tr>
+
+                <tr>
+                    <th>Birth Date & Time :</th>
+                    <td><input type="datetime-local" name="bdatetime"></td>
+                </tr>
+
+                <tr>
+                    <th>Select your <mark>Company Name</mark></th>
+                    <td>
+                        <select name="company">
+                            <option value="TCS">TCS</option>
+                            <option value="Wipro">Wipro</option>
+                            <option value="Mphasis">Mphasis</option>
+                            <option value="IBM">IBM</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Select Your Gender :</th>
+                    <td>
+                        <input type="radio" name="Gender" value="male">Male
+                        <input type="radio" name="Gender" value="female">Female
+                        <input type="radio" name="Gender" value="others">Others
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Select Your Prefered Location :</th>
+                    <td>
+                        <input type="checkbox" value="Banglore">Banglore<br>
+                        <input type="checkbox" value="Mumbai">Mumbai<br>
+                        <input type="checkbox" value="Pune">Pune<br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Select Your Qualification :</th>
+                    <td>
+                        <input list="Qualification">
+                        <datalist id="Qualification">
+                            <option>B.tech</option>
+                            <option>M.tech</option>
+                            <option>MCA</option>
+                            <option>BE</option>
+                        </datalist>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Upload Your Resume :</th>
+                    <td><input type="file" name="resume"></td>
+                </tr>
+            </table>
+            </center>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <table>
+                    <tr>
+                        <th>Father's Name :</th>
+                        <td><input type="text" name="fname"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Mother's Name :</th>
+                        <td><input type="text" name="mname"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Contact Number :</th>
+                        <td><input type="number" name="m.no"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <center>
+            <div>
+                <input type="submit" value="Send" class="btns">
+                <input type="reset" value="Clear" class="btns">
+            </div>
+            </center>
+            </form>
+    </body>
+</html>
